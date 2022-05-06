@@ -272,6 +272,10 @@ h1, h2, h3, p {
         transition: transform 0.3s ease-in-out;
     }
 
+    .navigation_active {
+        transform: translateX(0);
+    }
+
     .navigation__list {
         flex-direction: column;
         margin-right: 0;
@@ -299,7 +303,6 @@ h1, h2, h3, p {
         background-image: url('../images/close.svg');
         background-color: transparent;
         border: none;
-
     }
 
     .social {
