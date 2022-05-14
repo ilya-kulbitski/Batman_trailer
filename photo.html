@@ -7,7 +7,13 @@
     <title>Batman 2022</title>
 
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css"/>
+
+
     <link rel="stylesheet" href="style/style.css">
+
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,19 +29,19 @@
                     <a class="navigation__link" href="video.html">Видео</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active" href="photo.html">Фото</a>
+                    <a class="navigation__link navigation__link_active">Фото</a>
                 </li>
             </ul>
             <p class="header__hashtag">#TheBatman</p>
             <ul class="header__social social">
                 <li class="social__item">
-                    <a href="" class="social__link social__link_facebook"></a>
+                    <a href="https://www.facebook.com/TheBatman/" class="social__link social__link_facebook" target="_blank"></a>
                 </li>
                 <li class="social__item">
-                    <a href="" class="social__link social__link_twitter"></a>
+                    <a href="https://twitter.com/thebatman" class="social__link social__link_twitter" target="_blank"></a>
                 </li>
                 <li class="social__item">
-                    <a href="" class="social__link social__link_instagram"></a>
+                    <a href="https://www.instagram.com/thebatman/" class="social__link social__link_instagram" target="_blank"></a>
                 </li>
             </ul>
         </nav>
@@ -45,8 +51,57 @@
         </div>
     </header>
 
-    <main class="main main_index">
-        <img class="logo" src="images/logo_batman.png" alt="Логотип к фильму Batman" width="329" height="235">
+    <main class="main main_slider">
+        <div class="slider-main swiper">
+            <ul class="slider-main__list swiper-wrapper">
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo01.jpg" alt="Фото1" class="slider-main__img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo02.jpg" alt="Фото2" class="slider-main__img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo03.jpg" alt="Фото3" class="slider-main__img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo04.jpg" alt="Фото4" class="slider-main__img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo05.jpg" alt="Фото5" class="slider-main__img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo06.jpg" alt="Фото6" class="slider-main__img">
+                </li>
+            </ul>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination__arrow"></button>
+            <div class="slider-thumbs swiper">
+                <ul class="slider-thumbs__list swiper-wrapper">
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo01-thumbs.jpg" alt="Фото1 превью" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo02-thumbs.jpg" alt="Фото2 превью" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo03-thumbs.jpg" alt="Фото3 превью" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo04-thumbs.jpg" alt="Фото4 превью" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo05-thumbs.jpg" alt="Фото5 превью" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo06-thumbs.jpg" alt="Фото6 превью" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
     </main>
 
     <footer class="footer">
